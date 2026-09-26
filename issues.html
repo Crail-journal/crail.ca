@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CRAIL — Issues</title>
+<style>
+  :root{
+    --navy:#162d4a;
+    --gold:#b79a45;
+    --paper:#f7f5ee;
+    --ink:#1f2530;
+    --line:#d9d6cc;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family: Georgia, "Times New Roman", serif;
+    background:var(--paper);
+    color:var(--ink);
+  }
+  .wrap{max-width:1100px;margin:0 auto;padding:34px 24px 60px}
+  h1{
+    margin:0 0 26px;
+    font-size:44px;
+    color:var(--navy);
+  }
+  .issue-tabs{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+  }
+  .issue-tab{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:48px;
+    height:42px;
+    padding:0 16px;
+    border:1px solid var(--navy);
+    border-radius:5px;
+    text-decoration:none;
+    color:var(--navy);
+    background:white;
+    font-family:Arial,Helvetica,sans-serif;
+    font-weight:700;
+  }
+  .issue-tab.active{
+    background:var(--navy);
+    color:white;
+  }
+  .issue-head{
+    margin:10px 0 22px;
+    padding-bottom:15px;
+    border-bottom:1px solid var(--line);
+  }
+  .issue-head h2{
+    margin:0 0 6px;
+    color:var(--navy);
+    font-size:32px;
+  }
+  .issue-head p{
+    margin:0;
+    color:#60656d;
+    font-family:Arial,Helvetica,sans-serif;
+  }
+  .issue-summary{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:16px;
+    flex-wrap:wrap;
+  }
+  .btn.full-issue{
+    min-width:140px;
+    background:var(--gold);
+    border-color:var(--gold);
+    color:white;
+  }
+  .article{
+    background:white;
+    border:1px solid #e2dfd6;
+    padding:24px 26px;
+    margin:0 0 18px;
+  }
+  .article-row{
+    display:flex;
+    gap:18px;
+    align-items:flex-start;
+    justify-content:space-between;
+  }
+  .article-main{min-width:0;flex:1}
+  .article h3{
+    margin:0 0 8px;
+    font-size:27px;
+    line-height:1.28;
+    color:var(--navy);
+  }
+  .meta{
+    margin:0;
+    font-size:18px;
+    line-height:1.5;
+  }
+  .buttons{
+    display:flex;
+    gap:10px;
+    flex:0 0 auto;
+    padding-top:2px;
+  }
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:72px;
+    height:38px;
+    padding:0 14px;
+    border:1px solid var(--navy);
+    border-radius:4px;
+    text-decoration:none;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+    color:white;
+    background:var(--navy);
+  }
+  .btn.pdf{
+    color:var(--navy);
+    background:white;
+  }
+  @media(max-width:700px){
+    .wrap{padding:24px 16px 42px}
+    h1{font-size:36px}
+    .article-row{display:block}
+    .buttons{margin-top:16px}
+    .issue-summary{align-items:flex-start}
+    .article h3{font-size:23px}
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <h1>Issues</h1>
+
+  <nav class="issue-tabs" aria-label="Issues">
+    <a class="issue-tab active" href="#issue-1">1</a>
+    <a class="issue-tab" href="#issue-2">2</a>
+  </nav>
+
+  <section id="issue-1">
+    <div class="issue-head">
+      <div class="issue-summary">
+        <p>September 2026 · Inaugural Issue</p>
+        <a class="btn full-issue" href="CRAIL_Vol1_No1_Fall_2026.pdf">Full Issue PDF</a>
+      </div>
+    </div>
+
+    <article class="article">
+      <div class="article-row">
+        <div class="article-main">
+          <h3>Instrumentum Vocale and the Architecture of Responsibility: From Liability to Embedded Accountability</h3>
+          <p class="meta">Thorben Liebig and Dr. Adel Kildeev · pp. 11–84</p>
+        </div>
+        <div class="buttons">
+          <a class="btn" href="article-01.html">HTML</a>
+          <a class="btn pdf" href="Article-01.pdf">PDF</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section id="issue-2" hidden>
+    <div class="issue-head">
+      <h2>Vol. 1, No. 2</h2>
+      <p>Second issue</p>
+    </div>
+  </section>
+</main>
+</body>
+</html>
