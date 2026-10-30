@@ -146,7 +146,8 @@
 
   <nav class="issue-tabs" aria-label="Issues">
     <a class="issue-tab" href="#issue-1" data-issue="issue-1">Vol. 1, No. 1</a>
-    <a class="issue-tab active" href="#issue-2" data-issue="issue-2">Vol. 1, No. 2</a>
+    <a class="issue-tab href="#issue-2" data-issue="issue-2">Vol. 1, No. 2</a>
+    <a class="issue-tab active" href="#issue-3" data-issue="issue-3">Vol. 1, No. 3</a>
   </nav>
 
   <section id="issue-1" hidden>
@@ -382,6 +383,64 @@
       </div>
     </article>
   </section>
+  <section id="issue-3">
+  <div class="issue-head">
+    <div class="issue-summary">
+      <p>November 2026 · Fall 2026, Part III</p>
+      <a class="btn full-issue"
+        href="CRAIL_Vol.1-No.3-2026-November.pdf"
+        data-goatcounter-click="PDF-Full-Issue-03"
+        data-goatcounter-no-session="1">Full Issue PDF</a>
+    </div>
+  </div>
+
+  <article class="article">
+    <div class="article-row">
+      <div class="article-main">
+        <h3>Cognitive Seeds as an Integrative Design Framework for Human Understanding in AI-Mediated Learning</h3>
+        <p class="meta">John Gao</p>
+      </div>
+      <div class="buttons">
+        <a class="btn" href="Article-001-No.3-2026-November.html">HTML</a>
+        <a class="btn pdf"
+          href="Article-001-No.3-2026-November.pdf"
+          data-goatcounter-click="PDF-No3-Article-01"
+          data-goatcounter-no-session="1">PDF</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="article">
+    <div class="article-row">
+      <div class="article-main">
+        <h3>AI Governance in Review: Competing Doctrines, Legal Arguments, and Emerging Research</h3>
+        <p class="meta">Dr. Adel Kildeev</p>
+      </div>
+      <div class="buttons">
+        <a class="btn" href="Article-002-No.3-2026-November.html">HTML</a>
+        <a class="btn pdf"
+          href="Article-002-No.3-2026-November.pdf"
+          data-goatcounter-click="PDF-No3-Article-02"
+          data-goatcounter-no-session="1">PDF</a>
+      </div>
+    </div>
+  </article>
+  <article class="article">
+    <div class="article-row">
+      <div class="article-main">
+        <h3>Academia Without Scholars: Artificial Intelligence and the Erosion of Independent Judgment</h3>
+        <p class="meta">Dr. Adel Kildeev</p>
+      </div>
+      <div class="buttons">
+        <a class="btn" href="Article-003-No.3-2026-November.html">HTML</a>
+        <a class="btn pdf"
+          href="Article-003-No.3-2026-November.pdf"
+          data-goatcounter-click="PDF-No3-Article-03"
+          data-goatcounter-no-session="1">PDF</a>
+      </div>
+    </div>
+  </article>
+</section>
 </main>
 
 <script>
@@ -409,12 +468,12 @@
     });
   });
 
-  const requested = location.hash.replace('#', '');
-  if (requested === 'issue-1' || requested === 'issue-2') {
-    showIssue(requested);
-  } else {
-    showIssue('issue-2');
-  }
+ const requested = location.hash.replace('#', '');
+if (requested === 'issue-1' || requested === 'issue-2' || requested === 'issue-3') {
+  showIssue(requested);
+} else {
+  showIssue('issue-3');
+}
 })();
 </script>
 
